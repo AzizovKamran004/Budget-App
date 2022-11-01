@@ -1,0 +1,137 @@
+body {
+  background-color: #330033;
+  background-color: #131633;
+  background-image: url(../img/bg.svg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p,
+h2,
+h5 {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+#budget-app {
+  width: 80%;
+}
+
+.enter-budget {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border: 2px solid green;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.enter-budget h2 {
+  font-size: 25px;
+}
+
+.enter-expense {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border: 2px solid red;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.enter-expense h2 {
+  font-size: 25px;
+}
+
+.beb-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.beb-item i {
+  font-size: 50px;
+  color: #0362fc;
+}
+
+.budget h2:last-child {
+  color: green;
+  font-size: 45px;
+}
+
+.expenses h2:last-child {
+  color: red;
+  font-size: 45px;
+}
+
+.balance h2:last-child {
+  color: rgb(40, 202, 202);
+  font-size: 45px;
+}
+
+.expense-info {
+  padding: 1px 55px;
+  max-height: 305px;
+  overflow: auto;
+}
+
+.expense-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-item h5 {
+  color: red;
+}
+
+.expense-item .action-icons {
+  display: flex;
+  align-items: center;
+}
+
+.expense-item .action-icons i {
+  margin: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.expense-item .action-icons i:hover {
+  transform: scale(1.15);
+}
+
+.expense-item .action-icons #update-icon {
+  color: #0362fc;
+}
+
+.expense-item .action-icons #delete-icon {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .expenses{
+    margin-top: 20px;
+  }
+  
+  .balance{
+   margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #budget-app {
+    width: 90%;
+    height: 90%;
+  }
+}
